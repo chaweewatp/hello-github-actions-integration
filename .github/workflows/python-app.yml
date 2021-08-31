@@ -34,6 +34,6 @@ jobs:  # what to do
         pytest
     - shell: bash
       env:
-        SUPER_SECRET: ${{ secrets.PASSWORD }}
-      run: |
-        example-command "$SUPER_SECRET"
+        PASSWORD: ${{ secrets.PASSWORD }}
+      run: | 
+        echo "$PASSWORD"
