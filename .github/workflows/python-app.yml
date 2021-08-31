@@ -37,3 +37,13 @@ jobs:  # what to do
         PASSWORD: ${{ secrets.PASSWORD }}
       run: | 
         echo "$PASSWORD"
+    - name: Discord Message Notify
+      uses: appleboy/discord-action@0.0.3
+      with:
+        # discord webhook id
+        webhook_id:  882220403878137906
+        # discord webhook token
+        webhook_token: uroRgnc3sTGv5600d7Mkk6ejx1GZBTYQhAYj858JZZ3VNQprmQPfwNhp6k4u9czkbKb8
+        # the message contents (up to 2000 characters)
+        message: ลุมพินีเหงาจัง # optional
+
